@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="EKUCMS,易酷CMS,易酷免费影视系统">
+<meta name="description" content="欢迎使用易酷免费影视系统,通过该程序可以在短时间内建立一个强大的视频站点。">
+<title>易酷CMS</title>
+<link rel="stylesheet" type="text/css" href="/template/default/pub.css"/>
+<link rel="stylesheet" type="text/css" href="/template/default/yiku.css"/>
+<script type="text/javascript" src="/views/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/views/js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+$(function() {
+$("img").lazyload({
+effect : "fadeIn"
+});
+});
+</script>
+</head>
+<body>
+
+<script language="javascript">var SitePath='/';var SiteMid='';var SiteCid='';var SiteId='';</script>
+<!--头部 开始-->
+<div class="top">
+	<a href="/" class="logo"></a>
+    <!--搜索 开始-->
+	<div class="ss">
+    	<div class="ss1">
+        	<div id="searchSuggestContent" class="ss1-1"></div>
+        	<form id="searchForm" name="searchForm" method="post" action="/index.php?s=video/search/">
+        	<p>
+                <img src="/template/default/images/tb1.jpg" />
+                <input id="wd" name="wd"  autocomplete="off"type="text" 请输入关键字 />
+            </p>
+            <a href="javascript:void(0);" onclick="document.getElementById('searchForm').submit();"></a>
+            <input type="hidden" name="__gxcmsform__" value="61f36229e9890ec7f9e791eb47ec49b6" /></form>
+        </div>
+        <div class="ss2">
+            <a href="/?s=video/detail/id/935.html" target="_blank">应召女郎1988</a><a href="/index.php?s=video/search/wd/%E7%A5%9E%E6%8E%A2%E9%98%BF%E8%92%99" target="_blank">神探阿蒙</a><a href="/index.php?s=video/search/wd/%E5%AE%89%E5%A6%AE%E6%97%A5%E8%AE%B0" target="_blank">安妮日记</a><a href="/index.php?s=video/search/wd/%E4%B8%80%E9%AA%91%E5%BD%93%E5%8D%83" target="_blank">一骑当千</a><a href="/index.php?s=video/search/wd/%E8%A2%AB%E8%A7%A3%E6%94%BE%E7%9A%84%E8%BF%AA%E4%BA%9A%E6%88%88" target="_blank">被解放的迪亚戈</a>        </div>
+    </div>
+    <!--搜索 结束-->
+    <a href="/index.php?s=top10" class="ph"></a>
+    <div class="top1">
+    	<a href="javascript:void(0);" id="login_btn" style="display:none;">登录</a>|<a href="javascript:void(0);" id="reg_btn" style="display:none;">注册</a>
+        <a href="/index.php?s=Guestbook" style="color:#F00">我要求片</a>|
+        <a href="javascript:void(0);" class="top1-1" id="play_old_list_a" onblur="this.blur();">观看记录</a>
+        
+    	<!--观看记录 开始-->
+        <div class="jilu" id="play_old_list">
+        	<span class="jilu1"></span>
+            <div class="jilu3" id="play_old_list_content">
+                
+                <div class="jilu1-3"><a href="#" class="qk">全部清空</a></div>
+            </div>
+            <span class="jilu2"></span>
+        </div>
+        <!--观看记录 结束-->
+        
+    </div>
+</div>
+<!--头部 结束-->
+<!--导航 开始-->
+<div class="nav">
+	<div class="nav1">
+		<div class="nav1-1">
+            <a href="/" class="on">首页</a><span></span>
+            
+            <a onfocus="this.blur();" href="/?s=video/lists/id/1.html" >电影</a><span></span><a onfocus="this.blur();" href="/?s=video/lists/id/2.html" >电视剧</a><span></span><a onfocus="this.blur();" href="/?s=video/lists/id/3.html" >动漫</a><span></span><a onfocus="this.blur();" href="/?s=video/lists/id/4.html" >综艺</a><span></span><a onfocus="this.blur();" href="/?s=video/lists/id/6.html" >纪录片</a><span></span><a onfocus="this.blur();" href="/?s=video/lists/id/5.html" >体育</a><span></span>		</div>
+        <p class="nav1-2">
+        
+        <a href="http://www.keatv.com/detail/xijupian/xiyoujiangmopian.html"target="_blank" style="color:">精选专题</a><a href="http://www.keatv.com/detail/xijupian/renzaijiongtuzhitaijiong.html"target="_blank" style="color:#FFFF00">周星驰电影专题</a>    
+            
+        </p>
+	</div>
+</div>
+<!--导航 结束-->
+
+
+
+<!--wapper 开始-->
+<div class="wapper">
+	<!--第一部分 开始-->
+    <div class="main">
+    
+    
+    
+<div id="bigbanner">
+		<div id="banners">
+        
+            <div id="controls">
+            <li class="active"><a href="#" rel="banner-1"></a></li><li ><a href="#" rel="banner-2"></a></li><li ><a href="#" rel="banner-3"></a></li>            </div>
+            
+            <div class="banner_n current" id="banner-1">
+     			<a href="http://www.keatv.com/detail/meiguolianxuju/xixueguirijidisiji.html" target="_blank"><img src="/uploads/slide/2013-03-31/5157e9edd67c5.jpg"/></a>
+     		</div><div class="banner_n " id="banner-2">
+     			<a href="http://www.keatv.com/detail/xijupian/renzaijiongtuzhitaijiong.html" target="_blank"><img src="/uploads/slide/2013-03-31/5157ea045f8c1.jpg"/></a>
+     		</div><div class="banner_n " id="banner-3">
+     			<a href="http://www.keatv.com/detail/xijupian/xiyoujiangmopian.html" target="_blank"><img src="/uploads/slide/2013-03-31/5157ea292299a.jpg"/></a>
+     		</div>		</div>
+  </div>   
+    
+    
+        
+        <!--右边 开始-->
+        <div class="rb">
+            <div class="rb1">
+            
+            	<span class="on1" id="index_new_tag_1" onmouseover="video_index_tag_change(1,5,'index_new_tag_','index_new_tag_list_','on1','','ph1','ph1')">更新</span>
+                <span id="index_new_tag_2" onmouseover="video_index_tag_change(2,5,'index_new_tag_','index_new_tag_list_','on1','','ph1','ph1')">电影</span>
+                <span id="index_new_tag_3" style="width:52px;" onmouseover="video_index_tag_change(3,5,'index_new_tag_','index_new_tag_list_','on1','','css1','ph1')">电视剧</span>
+                <span id="index_new_tag_4" onmouseover="video_index_tag_change(4,5,'index_new_tag_','index_new_tag_list_','on1','','ph1','ph1')">动漫</span>
+                <span id="index_new_tag_5" onmouseover="video_index_tag_change(5,5,'index_new_tag_','index_new_tag_list_','on1','','ph1','ph1')">综艺</span>
+                <div class="clear"></div>
+            </div>
+            
+            <!--更新 开始-->
+            <ul class="ph1" id="index_new_tag_list_1">
+            <li class="css1" ><span <span class="ph1-1">1</span><a href="/?s=video/detail/id/1586.html" target="_blank" title="潜入侦探蜥蜴">潜入侦探蜥蜴</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-1">2</span><a href="/?s=video/detail/id/1577.html" target="_blank" title="廉政英雄">廉政英雄</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-1">3</span><a href="/?s=video/detail/id/72.html" target="_blank" title="大学生了没">大学生了没</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">4</span><a href="/?s=video/detail/id/1580.html" target="_blank" title="江湖正道">江湖正道</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">5</span><a href="/?s=video/detail/id/1584.html" target="_blank" title="老梁观世界2013">老梁观世界2013</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">6</span><a href="/?s=video/detail/id/1576.html" target="_blank" title="老梁故事汇">老梁故事汇</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">7</span><a href="/?s=video/detail/id/1583.html" target="_blank" title="遇见幸福300天">遇见幸福300天</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">8</span><a href="/?s=video/detail/id/1581.html" target="_blank" title="百万小学堂2013">百万小学堂2013</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">9</span><a href="/?s=video/detail/id/1579.html" target="_blank" title="中国最强音">中国最强音</a><span><font color="white">04-20</font></span></li><li class="css1" ><span <span class="ph1-2">10</span><a href="/?s=video/detail/id/33.html" target="_blank" title="蔘生">蔘生</a><span><font color="white">04-20</font></span></li>            </ul>
+            <!--更新 结束-->
+            
+            <!--电影 开始-->
+            <ul class="ph1" id="index_new_tag_list_2">
+                <li class="css1"><span <span class="ph1-1">1</span><a href="/?s=video/detail/id/60.html" target="_blank" title="宝岛鱼很大">宝岛鱼很大</a><span>04-01</span></li><li class="css1"><span <span class="ph1-1">2</span><a href="/?s=video/detail/id/38.html" target="_blank" title="邪恶女巫">邪恶女巫</a><span>04-01</span></li><li class="css1"><span <span class="ph1-1">3</span><a href="/?s=video/detail/id/191.html" target="_blank" title="杀人理论">杀人理论</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">4</span><a href="/?s=video/detail/id/190.html" target="_blank" title="战栗空间">战栗空间</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">5</span><a href="/?s=video/detail/id/189.html" target="_blank" title="巴黎单身派对/感觉工厂/唯我独尊">巴黎单身派对/感</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">6</span><a href="/?s=video/detail/id/183.html" target="_blank" title="伴舞女郎">伴舞女郎</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">7</span><a href="/?s=video/detail/id/181.html" target="_blank" title="黄金路">黄金路</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">8</span><a href="/?s=video/detail/id/179.html" target="_blank" title="情洒虎度门">情洒虎度门</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">9</span><a href="/?s=video/detail/id/178.html" target="_blank" title="秘岸/迷果/少年">秘岸/迷果/少年</a><span>03-31</span></li><li class="css1"><span <span class="ph1-2">10</span><a href="/?s=video/detail/id/193.html" target="_blank" title="夺命海怪">夺命海怪</a><span>03-31</span></li>            </ul>
+            <!--电影 结束-->
+            <!--电视剧 开始-->
+            <ul class="ph1" id="index_new_tag_list_3">
+                <li class="css1"><span <span class="ph1-1">1</span><a href="/?s=video/detail/id/1586.html" target="_blank" title="潜入侦探蜥蜴">潜入侦探蜥蜴</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-1">2</span><a href="/?s=video/detail/id/1577.html" target="_blank" title="廉政英雄">廉政英雄</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-1">3</span><a href="/?s=video/detail/id/1580.html" target="_blank" title="江湖正道">江湖正道</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">4</span><a href="/?s=video/detail/id/1583.html" target="_blank" title="遇见幸福300天">遇见幸福300天</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">5</span><a href="/?s=video/detail/id/33.html" target="_blank" title="蔘生">蔘生</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">6</span><a href="/?s=video/detail/id/1575.html" target="_blank" title="红鹰第二季">红鹰第二季</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">7</span><a href="/?s=video/detail/id/1573.html" target="_blank" title="大宅门1912">大宅门1912</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">8</span><a href="/?s=video/detail/id/86.html" target="_blank" title="可能爱过你">可能爱过你</a><span>04-01</span></li><li class="css1"><span <span class="ph1-2">9</span><a href="/?s=video/detail/id/24.html" target="_blank" title="我的爱蝴蝶夫人">我的爱蝴蝶夫人</a><span>04-01</span></li><li class="css1"><span <span class="ph1-2">10</span><a href="/?s=video/detail/id/15.html" target="_blank" title="最佳李纯信/最佳李顺新">最佳李纯信/最佳</a><span>04-01</span></li>            </ul>
+            <!--电视剧 结束-->
+            <!--动漫 开始-->
+            <ul class="ph1" id="index_new_tag_list_4">
+                <li class="css1"><span <span class="ph1-1">1</span><a href="/?s=video/detail/id/72.html" target="_blank" title="大学生了没">大学生了没</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-1">2</span><a href="/?s=video/detail/id/1576.html" target="_blank" title="老梁故事汇">老梁故事汇</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-1">3</span><a href="/?s=video/detail/id/1584.html" target="_blank" title="老梁观世界2013">老梁观世界2013</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">4</span><a href="/?s=video/detail/id/1581.html" target="_blank" title="百万小学堂2013">百万小学堂2013</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">5</span><a href="/?s=video/detail/id/1579.html" target="_blank" title="中国最强音">中国最强音</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">6</span><a href="/?s=video/detail/id/74.html" target="_blank" title="国光帮帮忙">国光帮帮忙</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">7</span><a href="/?s=video/detail/id/1578.html" target="_blank" title="中国梦想秀第五季">中国梦想秀第五季</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-2">8</span><a href="/?s=video/detail/id/29.html" target="_blank" title="世纪大讲堂">世纪大讲堂</a><span>04-01</span></li><li class="css1"><span <span class="ph1-2">9</span><a href="/?s=video/detail/id/42.html" target="_blank" title="我爱记歌词">我爱记歌词</a><span>04-01</span></li><li class="css1"><span <span class="ph1-2">10</span><a href="/?s=video/detail/id/51.html" target="_blank" title="决战一分钟">决战一分钟</a><span>04-01</span></li>            </ul>
+            <!--动漫 结束-->
+            <!--综艺 开始-->
+            <ul class="ph1" id="index_new_tag_list_5">
+                <li class="css1"><span <span class="ph1-1">1</span><a href="/?s=video/detail/id/1574.html" target="_blank" title="小企鹅宝露露">小企鹅宝露露</a><span><font color="white">04-20</font></span></li><li class="css1"><span <span class="ph1-1">2</span><a href="/?s=video/detail/id/26.html" target="_blank" title="伊克西翁传说">伊克西翁传说</a><span>04-01</span></li><li class="css1"><span <span class="ph1-1">3</span><a href="/?s=video/detail/id/31.html" target="_blank" title="LOVE LIVE!">LOVE LIVE!</a><span>04-01</span></li><li class="css1"><span <span class="ph1-2">4</span><a href="/?s=video/detail/id/99.html" target="_blank" title="战勇Senyu">战勇Senyu</a><span>03-27</span></li><li class="css1"><span <span class="ph1-2">5</span><a href="/?s=video/detail/id/105.html" target="_blank" title="龙-RYO">龙-RYO</a><span>03-27</span></li><li class="css1"><span <span class="ph1-2">6</span><a href="/?s=video/detail/id/21.html" target="_blank" title="迷你偶像/小小偶像大师">迷你偶像/小小偶</a><span>03-27</span></li><li class="css1"><span <span class="ph1-2">7</span><a href="/?s=video/detail/id/82.html" target="_blank" title="火影忍者小李外传">火影忍者小李外传</a><span>03-27</span></li><li class="css1"><span <span class="ph1-2">8</span><a href="/?s=video/detail/id/40.html" target="_blank" title="少年骇客：全面进化第一季">少年骇客：全面进</a><span>03-25</span></li><li class="css1"><span <span class="ph1-2">9</span><a href="/?s=video/detail/id/41.html" target="_blank" title="少年正义联盟第二季">少年正义联盟第二</a><span>03-25</span></li><li class="css1"><span <span class="ph1-2">10</span><a href="/?s=video/detail/id/12.html" target="_blank" title="全职猎人新TV/全职猎人II/新全职猎人">全职猎人新TV/全</a><span>03-25</span></li>            </ul>
+            <!--综艺 结束-->
+        </div>
+        <!--右边 结束-->
+      
+      
+      
+        
+        
+        
+    </div>
+    <!--第一部分 结束-->
+    <!--最近热播 开始-->
+    <div class="rb2">
+    	<h1><span>最近热播</span></h1>
+        <ul class="rb2-1">
+        
+        
+        <li>
+            	<a href="http://www.keatv.com/detail/xijupian/xiyoujiangmopian.html" target="_blank" class="img"><img src="/uploads/slide/2013-03-29/515543ff93af7.jpg" /></a>
+                <a href="http://www.keatv.com/detail/xijupian/xiyoujiangmopian.html" class="title" target="_blank">西游·降魔篇</a>
+                <p>周星驰再现西游记系列玄幻之作</p>
+            </li><li>
+            	<a href="http://www.keatv.com/detail/aiqingpian/beijingyushangxiyatu.html" target="_blank" class="img"><img src="/uploads/slide/2013-03-29/51554456d90dc.jpg" /></a>
+                <a href="http://www.keatv.com/detail/aiqingpian/beijingyushangxiyatu.html" class="title" target="_blank">北京遇上西雅图</a>
+                <p>《北京遇上西雅图》：异乡寻爱</p>
+            </li><li>
+            	<a href="http://www.keatv.com/detail/kehuanpian/jiangshishijiedazhan.html" target="_blank" class="img"><img src="/uploads/slide/2013-03-29/515544c805c32.jpg" /></a>
+                <a href="http://www.keatv.com/detail/kehuanpian/jiangshishijiedazhan.html" class="title" target="_blank">僵尸世界大战</a>
+                <p>一次虚构的世界大战</p>
+            </li><li>
+            	<a href="http://www.keatv.com/detail/juqingpian/shaonianpaideqihuanpiaoliu.html" target="_blank" class="img"><img src="/uploads/slide/2013-03-29/51554532b2ba7.jpg" /></a>
+                <a href="http://www.keatv.com/detail/juqingpian/shaonianpaideqihuanpiaoliu.html" class="title" target="_blank">少年派的奇幻漂流</a>
+                <p>李安因此片获得奥斯卡最佳导演</p>
+            </li><li>
+            	<a href="http://www.keatv.com/detail/kehuanpian/fuchouzhelianmeng.html" target="_blank" class="img"><img src="/uploads/slide/2013-03-29/51554592bb490.jpg" /></a>
+                <a href="http://www.keatv.com/detail/kehuanpian/fuchouzhelianmeng.html" class="title" target="_blank">复仇者联盟</a>
+                <p>青春依旧的复仇者联盟</p>
+            </li>    
+        </ul>
+    </div>
+    <!--最近热播 结束-->
+    <!--广告 开始-->
+    <div class="banner"><script type="text/javascript" src="/temp/Banner/inde_960_90.js" charset="utf-8"></script></div>
+    <!--广告 结束-->
+    <!--板块 开始-->
+    <div class="main1">
+    	<!--左边 开始-->
+        <div class="left">
+            <!--电影 开始-->
+            <div class="dy">
+            	<div class="dy1">
+                	<span class="dy1-1">电影</span>
+                    <a href="/?s=video/lists/id/1.html" target="_blank" class="more"></a>
+                    
+                    <p>
+                        <a href="/?s=video/lists/id/8.html" target="_blank">动作片</a><a href="/?s=video/lists/id/9.html" target="_blank">喜剧片</a><a href="/?s=video/lists/id/10.html" target="_blank">爱情片</a><a href="/?s=video/lists/id/11.html" target="_blank">科幻片</a><a href="/?s=video/lists/id/12.html" target="_blank">剧情片</a><a href="/?s=video/lists/id/13.html" target="_blank">恐怖片</a><a href="/?s=video/lists/id/14.html" target="_blank">战争片</a>                    </p>
+                </div>
+                <ul class="rb2-1 dy1-2">
+                
+                <li>
+                        <a href="/?s=video/detail/id/60.html" target="_blank" title="宝岛鱼很大" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-1/201311415294777102.jpg" title="宝岛鱼很大" /></a>
+                        <a href="/?s=video/detail/id/60.html" target="_blank" class="title">宝岛鱼很大</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%B2%88%E6%96%87%E7%A8%8B" target="_blank">沈文程</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/38.html" target="_blank" title="邪恶女巫" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-3/201332510345262635.jpg" title="邪恶女巫" /></a>
+                        <a href="/?s=video/detail/id/38.html" target="_blank" class="title">邪恶女巫</a>
+                        <p><a href="/index.php?s=video/search/wd/" target="_blank"></a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/191.html" target="_blank" title="杀人理论" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929215325334.jpg" title="杀人理论" /></a>
+                        <a href="/?s=video/detail/id/191.html" target="_blank" class="title">杀人理论</a>
+                        <p><a href="/index.php?s=video/search/wd/%E8%89%BE%E6%A0%BC%E5%B0%BC%E4%B8%9D%C2%B7%E5%B8%83%E9%B2%81%E6%A0%B9" target="_blank">艾格尼丝·布鲁根</a> <a href="/index.php?s=video/search/wd/%E5%B8%95" target="_blank">帕</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/190.html" target="_blank" title="战栗空间" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929201646320.jpg" title="战栗空间" /></a>
+                        <a href="/?s=video/detail/id/190.html" target="_blank" class="title">战栗空间</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%9C%B1%E8%BF%AA%C2%B7%E7%A6%8F%E6%96%AF%E7%89%B9" target="_blank">朱迪·福斯特</a> <a href="/index.php?s=video/search/wd/%E5%85%8B%E9%87%8C%E6%96%AF" target="_blank">克里斯</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/189.html" target="_blank" title="巴黎单身派对/感觉工厂/唯我独尊" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929215414636.jpg" title="巴黎单身派对/感觉工厂/唯我独尊" /></a>
+                        <a href="/?s=video/detail/id/189.html" target="_blank" class="title">巴黎单身派对/感觉工</a>
+                        <p><a href="/index.php?s=video/search/wd/%E8%89%BE%E5%B0%94%E8%8E%8E%C2%B7%E6%B3%BD%E8%B4%9D%E6%96%AF%E5%9D%A6" target="_blank">艾尔莎·泽贝斯坦</a> <a href="/index.php?s=video/search/wd/%E8%B4%BE" target="_blank">贾</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/183.html" target="_blank" title="伴舞女郎" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929185932307.jpg" title="伴舞女郎" /></a>
+                        <a href="/?s=video/detail/id/183.html" target="_blank" class="title">伴舞女郎</a>
+                        <p><a href="/index.php?s=video/search/wd/%E5%B9%B3%E5%B1%B1%E7%BB%AB" target="_blank">平山绫</a> <a href="/index.php?s=video/search/wd/%E7%94%B0%E4%B8%AD%E5%9C%AD" target="_blank">田中圭</a> <a href="/index.php?s=video/search/wd/%E6%B2%99%E8%80%B6%E5%AD%90" target="_blank">沙耶子</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/181.html" target="_blank" title="黄金路" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929190801527.jpg" title="黄金路" /></a>
+                        <a href="/?s=video/detail/id/181.html" target="_blank" class="title">黄金路</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%9D%8E%E5%8D%97%E6%98%9F" target="_blank">李南星</a> <a href="/index.php?s=video/search/wd/%E9%99%88%E8%8E%89%E8%90%8D" target="_blank">陈莉萍</a> <a href="/index.php?s=video/search/wd/%E9%83%91%E6%96%8C%E8%BE%89" target="_blank">郑斌辉</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/179.html" target="_blank" title="情洒虎度门" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2012-10/2012101119103721187.jpg" title="情洒虎度门" /></a>
+                        <a href="/?s=video/detail/id/179.html" target="_blank" class="title">情洒虎度门</a>
+                        <p><a href="/index.php?s=video/search/wd/%E7%BD%97%E5%AE%B6%E8%8B%B1" target="_blank">罗家英</a> <a href="/index.php?s=video/search/wd/%E7%90%BC%E9%9C%9E" target="_blank">琼霞</a> <a href="/index.php?s=video/search/wd/%E6%B8%A9%E6%B5%B7%E6%B1%9F" target="_blank">温海江</a> <a href="/index.php?s=video/search/wd/" target="_blank"></a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/178.html" target="_blank" title="秘岸/迷果/少年" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929212207471.jpg" title="秘岸/迷果/少年" /></a>
+                        <a href="/?s=video/detail/id/178.html" target="_blank" class="title">秘岸/迷果/少年</a>
+                        <p><a href="/index.php?s=video/search/wd/%E8%8E%AB%E6%96%87%E8%94%9A" target="_blank">莫文蔚</a> <a href="/index.php?s=video/search/wd/%E6%9B%BE%E5%BF%97%E4%BC%9F" target="_blank">曾志伟</a> <a href="/index.php?s=video/search/wd/%E6%AA%80%E5%81%A5%E6%AC%A1" target="_blank">檀健次</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/193.html" target="_blank" title="夺命海怪" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2009/9/29/20090929215327702.jpg" title="夺命海怪" /></a>
+                        <a href="/?s=video/detail/id/193.html" target="_blank" class="title">夺命海怪</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%9F%AF%E6%9E%97%C2%B7%E7%BA%B3%E9%BA%A6%E5%85%8B" target="_blank">柯林·纳麦克</a> <a href="/index.php?s=video/search/wd/Miria" target="_blank">Miria</a> </p>
+                    </li>   
+                    
+                </ul>
+            </div>
+            <!--电影 结束-->
+            <!--电视剧 开始-->
+            <div class="dy">
+            	<div class="dy1">
+                	<span class="dy1-1">电视剧</span>
+                    <a href="/?s=video/lists/id/2.html" target="_blank" class="more"></a>
+                    <p>
+                        <a href="/?s=video/lists/id/15.html" target="_blank">国产剧</a><a href="/?s=video/lists/id/16.html" target="_blank">台湾剧</a><a href="/?s=video/lists/id/17.html" target="_blank">香港剧</a><a href="/?s=video/lists/id/18.html" target="_blank">韩国剧</a><a href="/?s=video/lists/id/19.html" target="_blank">日本剧</a><a href="/?s=video/lists/id/20.html" target="_blank">欧美剧</a><a href="/?s=video/lists/id/21.html" target="_blank">海外剧</a>                    </p>
+                </div>
+                <ul class="rb2-1 dy1-2">
+                
+                <li>
+                        <a href="/?s=video/detail/id/1586.html" target="_blank" title="潜入侦探蜥蜴" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171d11c5f91f.jpg" title="潜入侦探蜥蜴" /></a>
+                        <a href="/?s=video/detail/id/1586.html" target="_blank" class="title">潜入侦探蜥蜴</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%9D%BE%E7%94%B0%E7%BF%94%E5%A4%AA" target="_blank">松田翔太</a> <a href="/index.php?s=video/search/wd/%E6%9D%BE%E5%86%88%E6%98%8C%E5%AE%8F" target="_blank">松冈昌宏</a> <a href="/index.php?s=video/search/wd/%E8%8E%B2" target="_blank">莲</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1577.html" target="_blank" title="廉政英雄" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b35e9a8cd.jpg" title="廉政英雄" /></a>
+                        <a href="/?s=video/detail/id/1577.html" target="_blank" class="title">廉政英雄</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%9D%8E%E6%94%BF%E9%A2%96" target="_blank">李政颖</a> <a href="/index.php?s=video/search/wd/%E5%A7%9A%E5%85%83%E6%B5%A9" target="_blank">姚元浩</a> <a href="/index.php?s=video/search/wd/%E5%91%A8%E5%AD%9D%E5%AE%89" target="_blank">周孝安</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1580.html" target="_blank" title="江湖正道" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b36046266.jpg" title="江湖正道" /></a>
+                        <a href="/?s=video/detail/id/1580.html" target="_blank" class="title">江湖正道</a>
+                        <p><a href="/index.php?s=video/search/wd/%E9%BB%84%E5%BF%97%E5%BF%A0" target="_blank">黄志忠</a> <a href="/index.php?s=video/search/wd/%E7%8E%8B%E5%8A%B2%E6%9D%BE" target="_blank">王劲松</a> <a href="/index.php?s=video/search/wd/%E6%9F%AF" target="_blank">柯</a> <a href="/index.php?s=video/search/wd/%E8%93%9D" target="_blank">蓝</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1583.html" target="_blank" title="遇见幸福300天" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171d119a38ef.jpg" title="遇见幸福300天" /></a>
+                        <a href="/?s=video/detail/id/1583.html" target="_blank" class="title">遇见幸福300天</a>
+                        <p><a href="/index.php?s=video/search/wd/%E7%8E%8B%E4%BC%A0%E4%B8%80" target="_blank">王传一</a> <a href="/index.php?s=video/search/wd/%E9%99%88%E6%80%A1%E8%93%89" target="_blank">陈怡蓉</a> <a href="/index.php?s=video/search/wd/%E5%9D%A4%E8%BE%BE" target="_blank">坤达</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/33.html" target="_blank" title="蔘生" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-1/2013172063392071.jpg" title="蔘生" /></a>
+                        <a href="/?s=video/detail/id/33.html" target="_blank" class="title">蔘生</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%B4%AA%E9%9B%85%E5%87%9B" target="_blank">洪雅凛</a> <a href="/index.php?s=video/search/wd/%E6%B1%A0%E6%97%A5%E6%B4%99" target="_blank">池日洙</a> <a href="/index.php?s=video/search/wd/%E6%9D%8E%E9%9B%85%E8%B4%A4" target="_blank">李雅贤</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1575.html" target="_blank" title="红鹰第二季" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b35d6630b.jpg" title="红鹰第二季" /></a>
+                        <a href="/?s=video/detail/id/1575.html" target="_blank" class="title">红鹰第二季</a>
+                        <p><a href="/index.php?s=video/search/wd/" target="_blank"></a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1573.html" target="_blank" title="大宅门1912" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b35c65604.jpg" title="大宅门1912" /></a>
+                        <a href="/?s=video/detail/id/1573.html" target="_blank" class="title">大宅门1912</a>
+                        <p><a href="/index.php?s=video/search/wd/%E9%99%88%E5%AE%9D%E5%9B%BD" target="_blank">陈宝国</a> <a href="/index.php?s=video/search/wd/%E6%96%AF%E7%90%B4%E9%AB%98%E5%A8%83" target="_blank">斯琴高娃</a> <a href="/index.php?s=video/search/wd/%E4%BD%95%E6%99%B4" target="_blank">何晴</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/86.html" target="_blank" title="可能爱过你" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2012-10/201210151282549639.jpg" title="可能爱过你" /></a>
+                        <a href="/?s=video/detail/id/86.html" target="_blank" class="title">可能爱过你</a>
+                        <p><a href="/index.php?s=video/search/wd/%E5%AE%89%E5%9C%A8%E6%A8%A1" target="_blank">安在模</a> <a href="/index.php?s=video/search/wd/%E6%9C%B4%E8%AF%97%E6%81%A9" target="_blank">朴诗恩</a> <a href="/index.php?s=video/search/wd/%E9%87%91%E5%AE%9D%E4%BA%AC" target="_blank">金宝京</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/24.html" target="_blank" title="我的爱蝴蝶夫人" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2012-10/20121079371068382.jpg" title="我的爱蝴蝶夫人" /></a>
+                        <a href="/?s=video/detail/id/24.html" target="_blank" class="title">我的爱蝴蝶夫人</a>
+                        <p><a href="/index.php?s=video/search/wd/%E5%BB%89%E6%99%B6%E9%9B%85" target="_blank">廉晶雅</a> <a href="/index.php?s=video/search/wd/%E6%9C%B4%E5%8B%87%E5%AE%87" target="_blank">朴勇宇</a> <a href="/index.php?s=video/search/wd/%E5%B0%B9%E4%B8%96%E9%9B%85" target="_blank">尹世雅</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/15.html" target="_blank" title="最佳李纯信/最佳李顺新" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-3/20133108471676017.jpg" title="最佳李纯信/最佳李顺新" /></a>
+                        <a href="/?s=video/detail/id/15.html" target="_blank" class="title">最佳李纯信/最佳李顺</a>
+                        <p><a href="/index.php?s=video/search/wd/%E8%B5%B5%E6%AD%A3%E9%94%A1" target="_blank">赵正锡</a> <a href="/index.php?s=video/search/wd/IU" target="_blank">IU</a> <a href="/index.php?s=video/search/wd/%E5%88%98%E4%BB%81%E5%A8%9C" target="_blank">刘仁娜</a> <a href="/index.php?s=video/search/wd/%E5%AD%99" target="_blank">孙</a> </p>
+                    </li>   
+                
+                </ul>
+            </div>
+            <!--电视剧 结束-->
+        </div>
+        <!--左边 结束-->
+        <!--右边 开始-->
+        <div class="right">
+        	<!--热播电影榜 开始-->
+            <div class="right1">
+            <div class="bg">
+            	<h1><span>热播电影榜</span></h1>
+                <!--热榜 开始-->
+                <ul class="ph2">
+                    <li><span class="ph1-1" >1</span><a href="/?s=video/detail/id/37.html" target="_blank">年满21</a><span>143</span></li><li><span class="ph1-1" >2</span><a href="/?s=video/detail/id/60.html" target="_blank">宝岛鱼很大</a><span>6</span></li><li><span class="ph1-1" >3</span><a href="/?s=video/detail/id/191.html" target="_blank">杀人理论</a><span>0</span></li><li><span class="ph1-2" >4</span><a href="/?s=video/detail/id/103.html" target="_blank">血邻</a><span>0</span></li><li><span class="ph1-2" >5</span><a href="/?s=video/detail/id/101.html" target="_blank">切除/开膛少女的异想世界</a><span>0</span></li><li><span class="ph1-2" >6</span><a href="/?s=video/detail/id/46.html" target="_blank">杀手旅馆</a><span>0</span></li><li><span class="ph1-2" >7</span><a href="/?s=video/detail/id/45.html" target="_blank">惊魂之夜</a><span>0</span></li><li><span class="ph1-2" >8</span><a href="/?s=video/detail/id/39.html" target="_blank">邪恶</a><span>0</span></li><li><span class="ph1-2" >9</span><a href="/?s=video/detail/id/38.html" target="_blank">邪恶女巫</a><span>0</span></li><li><span class="ph1-2" >10</span><a href="/?s=video/detail/id/190.html" target="_blank">战栗空间</a><span>0</span></li>                </ul>
+                <!--热榜 结束-->
+            </div>
+            </div>
+            <!--热播电影榜 结束-->
+            
+                <div class="pic"><a href="http://www.keatv.com/detail/aiqingpian/yiluxiangxi.html" target="_blank" ><img src="/uploads/slide/2013-03-31/5157ac7e60968.jpg" alt="一路向西" /></a></div><div class="pic"><a href="http://www.keatv.com/detail/xijupian/xiyoujiangmopian.html" target="_blank" ><img src="/uploads/slide/2013-03-31/5157abc0bf161.jpg" alt="西游降魔篇" /></a></div>    
+            
+            
+            
+            <!--热播电视剧榜 开始-->
+            <div class="right1">
+            <div class="bg">
+            	<h1><span>热播电视剧榜</span></h1>
+                <!--热榜 开始-->
+                <ul class="ph2">
+                    <li><span class="ph1-1" >1</span><a href="/?s=video/detail/id/1583.html" target="_blank">遇见幸福300天</a><span>410</span></li><li><span class="ph1-1" >2</span><a href="/?s=video/detail/id/1586.html" target="_blank">潜入侦探蜥蜴</a><span>286</span></li><li><span class="ph1-1" >3</span><a href="/?s=video/detail/id/1.html" target="_blank">童话镇第二季</a><span>211</span></li><li><span class="ph1-2" >4</span><a href="/?s=video/detail/id/1580.html" target="_blank">江湖正道</a><span>108</span></li><li><span class="ph1-2" >5</span><a href="/?s=video/detail/id/1575.html" target="_blank">红鹰第二季</a><span>0</span></li><li><span class="ph1-2" >6</span><a href="/?s=video/detail/id/133.html" target="_blank">嗜血法医第1季</a><span>0</span></li><li><span class="ph1-2" >7</span><a href="/?s=video/detail/id/132.html" target="_blank">识骨寻踪第3季</a><span>0</span></li><li><span class="ph1-2" >8</span><a href="/?s=video/detail/id/128.html" target="_blank">人人都恨克里斯</a><span>0</span></li><li><span class="ph1-2" >9</span><a href="/?s=video/detail/id/77.html" target="_blank">美国之声第四季</a><span>0</span></li><li><span class="ph1-2" >10</span><a href="/?s=video/detail/id/76.html" target="_blank">青春密语 第五季</a><span>0</span></li>                </ul>
+                <!--热榜 结束-->
+            </div>
+            </div>
+            <!--热播电视剧榜 结束-->
+            
+                <div class="pic"><a href="http://www.keatv.com/detail/guochandianshiju/zhaoshigueran.html" target="_blank" ><img src="/uploads/slide/2013-03-31/5157ad8432326.jpg" alt="赵氏孤儿案" /></a></div><div class="pic"><a href="http://www.keatv.com/detail/guochandianshiju/zhaoshigueran.html" target="_blank" ><img src="/uploads/slide/2013-03-31/5157ad9453c35.jpg" alt="赵氏孤儿案" /></a></div>    
+            
+            
+        </div>
+        <!--右边 结束-->
+        <div class="clear"></div>
+    </div>
+    <!--板块 结束-->
+    
+    <!--广告 开始-->
+    <div class="banner"><script type="text/javascript" src="/temp/Banner/inde_960_90_2.js" charset="utf-8"></script></div>
+    <!--广告 结束-->
+    
+    <!--板块 开始-->
+    <div class="main1">
+    	<!--左边 开始-->
+        <div class="left">
+            <!--综艺 开始-->
+            <div class="dy dy2">
+            	<div class="dy1">
+                	<span class="dy1-1">综艺</span>
+                    <a href="/?s=video/lists/id/4.html" target="_blank" class="more"></a>
+                    <p>
+                                            </p>
+                </div>
+                <ul class="rb2-1 dy1-2">
+                
+                <li>
+                        <a href="/?s=video/detail/id/72.html" target="_blank" title="大学生了没" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2011/09/23/29fc2477aaada53a6d2e98536125fd46.jpg" title="大学生了没" /></a>
+                        <a href="/?s=video/detail/id/72.html" target="_blank" class="title">大学生了没</a>
+                        <p><a href="/index.php?s=video/search/wd/%E9%99%B6%E6%99%B6%E8%8E%B9" target="_blank">陶晶莹</a> <a href="/index.php?s=video/search/wd/%E7%BA%B3%E8%B1%86" target="_blank">纳豆</a> <a href="/index.php?s=video/search/wd/%E9%98%BFKen" target="_blank">阿Ken</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1576.html" target="_blank" title="老梁故事汇" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b35e15ac7.jpg" title="老梁故事汇" /></a>
+                        <a href="/?s=video/detail/id/1576.html" target="_blank" class="title">老梁故事汇</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%A2%81%E5%AE%8F%E8%BE%BE" target="_blank">梁宏达</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1584.html" target="_blank" title="老梁观世界2013" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171d11a14509.jpg" title="老梁观世界2013" /></a>
+                        <a href="/?s=video/detail/id/1584.html" target="_blank" class="title">老梁观世界2013</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%A2%81%E5%AE%8F%E8%BE%BE" target="_blank">梁宏达</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1581.html" target="_blank" title="百万小学堂2013" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171d112d1f8f.jpg" title="百万小学堂2013" /></a>
+                        <a href="/?s=video/detail/id/1581.html" target="_blank" class="title">百万小学堂2013</a>
+                        <p><a href="/index.php?s=video/search/wd/%E5%BC%A0%E5%B0%8F%E7%87%95" target="_blank">张小燕</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/1579.html" target="_blank" title="中国最强音" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b35fadf22.jpg" title="中国最强音" /></a>
+                        <a href="/?s=video/detail/id/1579.html" target="_blank" class="title">中国最强音</a>
+                        <p><a href="/index.php?s=video/search/wd/%E7%BD%97%E5%A4%A7%E4%BD%91" target="_blank">罗大佑</a> <a href="/index.php?s=video/search/wd/%E9%83%91%E9%92%A7" target="_blank">郑钧</a> <a href="/index.php?s=video/search/wd/%E9%99%88%E5%A5%95%E8%BF%85" target="_blank">陈奕迅</a> <a href="/index.php?s=video/search/wd/" target="_blank"></a> </p>
+                    </li>   
+                
+                </ul>
+            </div>
+            <!--综艺 结束-->
+            <!--动漫 开始-->
+            <div class="dy dy2">
+            	<div class="dy1">
+                	<span class="dy1-1">动漫</span>
+                    <a href="/?s=video/lists/id/3.html"  target="_blank" class="more"></a>
+                    <p>
+                                            </p>
+                </div>
+                <ul class="rb2-1 dy1-2">
+                <li>
+                        <a href="/?s=video/detail/id/1574.html" target="_blank" title="小企鹅宝露露" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="/uploads/video/2013-04-20/5171b35cd8727.jpg" title="小企鹅宝露露" /></a>
+                        <a href="/?s=video/detail/id/1574.html" target="_blank" class="title">小企鹅宝露露</a>
+                        <p><a href="/index.php?s=video/search/wd/%E4%B8%8D%E8%AF%A6" target="_blank">不详</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/26.html" target="_blank" title="伊克西翁传说" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2012-10/201210101514028168.jpg" title="伊克西翁传说" /></a>
+                        <a href="/?s=video/detail/id/26.html" target="_blank" class="title">伊克西翁传说</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%B1%9F%E5%8F%A3%E6%8B%93%E4%B9%9F" target="_blank">江口拓也</a> <a href="/index.php?s=video/search/wd/%E7%A5%9E%E8%B0%B7%E6%B5%A9%E5%8F%B2" target="_blank">神谷浩史</a> <a href="/index.php?s=video/search/wd/%E4%B8%AD" target="_blank">中</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/31.html" target="_blank" title="LOVE LIVE!" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-1/2013180194283715.jpg" title="LOVE LIVE!" /></a>
+                        <a href="/?s=video/detail/id/31.html" target="_blank" class="title">LOVE LIVE!</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%96%B0%E7%94%B0%E6%83%A0%E6%B5%B7" target="_blank">新田惠海</a> <a href="/index.php?s=video/search/wd/%E5%8D%97%E6%9D%A1%E7%88%B1%E4%B9%83" target="_blank">南条爱乃</a> <a href="/index.php?s=video/search/wd/%E5%86%85" target="_blank">内</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/99.html" target="_blank" title="战勇Senyu" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-1/20131910124527119.jpg" title="战勇Senyu" /></a>
+                        <a href="/?s=video/detail/id/99.html" target="_blank" class="title">战勇Senyu</a>
+                        <p><a href="/index.php?s=video/search/wd/%E4%B8%8B%E9%87%8E%E7%BA%AE" target="_blank">下野纮</a> <a href="/index.php?s=video/search/wd/%E4%B8%AD%E6%9D%91%E6%82%A0%E4%B8%80" target="_blank">中村悠一</a> <a href="/index.php?s=video/search/wd/%E8%8C%85%E9%87%8E" target="_blank">茅野</a> </p>
+                    </li><li>
+                        <a href="/?s=video/detail/id/105.html" target="_blank" title="龙-RYO" class="img"><img  onerror="this.src='/views/images/nophoto.jpg'" src="http://haku3.joykk.com/pic/uploadimg/2013-3/201332710201520222.jpg" title="龙-RYO" /></a>
+                        <a href="/?s=video/detail/id/105.html" target="_blank" class="title">龙-RYO</a>
+                        <p><a href="/index.php?s=video/search/wd/%E6%82%A0%E6%9C%A8" target="_blank">悠木</a> <a href="/index.php?s=video/search/wd/%E7%A2%A7" target="_blank">碧</a> <a href="/index.php?s=video/search/wd/%E8%97%A4%E5%8E%9F" target="_blank">藤原</a> <a href="/index.php?s=video/search/wd/%E5%95%93%E6%B2%BB" target="_blank">啓治</a> <a href="/index.php?s=video/search/wd/" target="_blank"></a> </p>
+                    </li>   
+                </ul>
+            </div>
+            <!--动漫 结束-->
+        </div>
+        <!--左边 结束-->
+        <!--右边 开始-->
+        <div class="right">
+        	<!--综艺热播榜 开始-->
+            <div class="right1 right1-1">
+            <div class="bg">
+            	<h1><span>综艺热播榜</span></h1>
+                <!--热榜 开始-->
+                <ul class="ph2">
+                    <li><span class="ph1-1" >1</span><a href="/?s=video/detail/id/1581.html" target="_blank">百万小学堂2013</a><span>276</span></li><li><span class="ph1-1" >2</span><a href="/?s=video/detail/id/1584.html" target="_blank">老梁观世界2013</a><span>108</span></li><li><span class="ph1-1" >3</span><a href="/?s=video/detail/id/6.html" target="_blank">音乐银行</a><span>0</span></li><li><span class="ph1-2" >4</span><a href="/?s=video/detail/id/7.html" target="_blank">生死时速</a><span>0</span></li><li><span class="ph1-2" >5</span><a href="/?s=video/detail/id/28.html" target="_blank">环宇大战略</a><span>0</span></li><li><span class="ph1-2" >6</span><a href="/?s=video/detail/id/29.html" target="_blank">世纪大讲堂</a><span>0</span></li><li><span class="ph1-2" >7</span><a href="/?s=video/detail/id/32.html" target="_blank">美女私房菜</a><span>0</span></li><li><span class="ph1-2" >8</span><a href="/?s=video/detail/id/35.html" target="_blank">帕克</a><span>0</span></li><li><span class="ph1-2" >9</span><a href="/?s=video/detail/id/42.html" target="_blank">我爱记歌词</a><span>0</span></li><li><span class="ph1-2" >10</span><a href="/?s=video/detail/id/51.html" target="_blank">决战一分钟</a><span>0</span></li>                </ul>
+                <!--热榜 结束-->
+            </div>
+            </div>
+            <!--综艺热播榜 结束-->
+            <!--动漫热播榜 开始-->
+            <div class="right1 right1-1">
+            <div class="bg">
+            	<h1><span>动漫热播榜</span></h1>
+                <!--热榜 开始-->
+                <ul class="ph2">
+                    <li><span class="ph1-1" >1</span><a href="/?s=video/detail/id/12.html" target="_blank">全职猎人新TV/全职猎人II/新全职猎人</a><span>0</span></li><li><span class="ph1-1" >2</span><a href="/?s=video/detail/id/21.html" target="_blank">迷你偶像/小小偶像大师</a><span>0</span></li><li><span class="ph1-1" >3</span><a href="/?s=video/detail/id/22.html" target="_blank">闪乱神乐</a><span>0</span></li><li><span class="ph1-2" >4</span><a href="/?s=video/detail/id/26.html" target="_blank">伊克西翁传说</a><span>0</span></li><li><span class="ph1-2" >5</span><a href="/?s=video/detail/id/31.html" target="_blank">LOVE LIVE!</a><span>0</span></li><li><span class="ph1-2" >6</span><a href="/?s=video/detail/id/40.html" target="_blank">少年骇客：全面进化第一季</a><span>0</span></li><li><span class="ph1-2" >7</span><a href="/?s=video/detail/id/41.html" target="_blank">少年正义联盟第二季</a><span>0</span></li><li><span class="ph1-2" >8</span><a href="/?s=video/detail/id/82.html" target="_blank">火影忍者小李外传</a><span>0</span></li><li><span class="ph1-2" >9</span><a href="/?s=video/detail/id/99.html" target="_blank">战勇Senyu</a><span>0</span></li><li><span class="ph1-2" >10</span><a href="/?s=video/detail/id/105.html" target="_blank">龙-RYO</a><span>0</span></li>                </ul>
+                <!--热榜 结束-->
+            </div>
+            </div>
+            <!--动漫热播榜 结束-->
+        </div>
+        <!--右边 结束-->
+        <div class="clear"></div>
+    </div>
+    <!--板块 结束-->
+    
+    <!--友情链接 开始-->
+    <div class="yq">
+   	<div class="bg1">
+    	<h1>友情链接</h1>
+        <div class="yq1">
+        	<a href="http://www.keatv.com" target="_blank">酷视网</a><a href="http://www.ekucms.com" target="_blank">易酷免费影视系统</a>            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+    <!--友情链接 结束-->
+<script type="text/javascript" src="/views/js/system.js"></script>
+<script type="text/javascript" src="/template/default/yiku.js"></script>
+<script>
+    $(document).ready(function(){
+	$("#controls li a").click(function(){
+        /*Performed when a control is clicked */
+	    shuffle();
+	    var rel = $(this).attr("rel");
+	    if ( $("#" + rel).hasClass("current") ){
+	        return false;
+	    }
+        /* Bug Fix, thanks Dave -> added .stop(true,true) 
+            to stop any ongoing animation */
+	    $("#" + rel).stop(true,true).show();
+	    $(".current").fadeOut().removeClass("current");
+	    $("#" + rel).addClass("current");
+	    $(".active").removeClass("active");
+	    $(this).parents("li").addClass("active");
+	    set_new_interval(5000);
+	    return false;
+	});
+	/* 
+	* Optional Pause on Hover Feature 
+	* Comment out to use it
+	* Thanks, Andrew 
+	*/
+	/*$('.banner').hover(function() {
+			clearInterval(slide);
+		}, function () {
+			slide = setInterval( "banner_switch()", 7000 );
+	});*/
+    });
+    function banner_switch(){
+        /*This function is called on to switch the banners out when the time limit is reached */
+        shuffle();
+        var next = $('.banner_n.current').next('.banner_n').length ? 
+            $('.banner_n.current').next('.banner_n') : $('#banners .banner_n:first');
+        $(next).show();
+        $(".current").fadeOut().removeClass("current");
+        $(next).addClass("current");
+        var next_link = $(".active").next("li").length ? $('.active').next('li') : $('#controls li:first');
+        $(".active").removeClass("active");
+        $(next_link).addClass('active');
+    }
+    $(function() {
+        /*Initial timer setting */
+        slide = setInterval("banner_switch()", 5000);
+    });
+    function set_new_interval(interval){
+        /*Simply clears out the old timer interval and restarts it */
+        clearInterval(slide);
+        slide = setInterval("banner_switch()", interval);
+    }
+    function shuffle(){
+        /*This function takes every .banner and changes the z-index to 1, hides them,
+            then takes the ".current" banner and brings it above and shows it */
+        $(".banner_n").css("z-index", 1).hide();
+        $(".current").css("z-index", 2).show();
+    }
+    </script>
+	    <!--版权 开始-->
+    <div class="bq">
+   		本网站提供的最新电视剧和电影资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传。        <p style="height:8px;"></p>
+
+        Copyright © 2007 - 2011 <a href="http://www.eku23.com/">易酷CMS</a> Some Rights Reserved  <script language="javascript" type="text/javascript" src="http://js.users.51.la/15600100.js"></script> <a href="/?s=map/lists/id/baidu/limit/500.xml">sitemap</a> <a href="/?s=map/lists/id/google/limit/500.xml">sitemap</a><br />
+        <span style="display:none;"><script language="javascript" type="text/javascript" src="http://js.users.51.la/15665491.js"></script></span>
+    </div>
+    <!--版权 结束-->    
+</div>
+<!--wapper 结束-->
+</body>
+</html>

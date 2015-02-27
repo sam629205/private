@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>环境检测-{&web_name}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel='stylesheet' type='text/css' href='./views/css/admin_style.css'>
+<head>
+<script language="JavaScript" charset="utf-8" type="text/javascript" src="./views/js/jquery.js"></script>
+<style>td{ height:22px; line-height:22px}</style>
+</head>
+<body>
+<table width="98%" border="0" cellpadding="4" cellspacing="1" class="table">
+  <tr class="table_title">
+    <td>快速操作：</td>
+  </tr>
+  <tr class="ji">
+    <td style="height:60px;">
+    <table width="600" border="0" cellspacing="1" cellpadding="10" class="table">
+      <tr class="ji" style="background-color:#093">
+        <td align="center" style="background-color:#F30; font-size:14px; "><a href="?s=Admin/Adsense/Show" style="color:#FFF;">广告管理</a></td>
+        <td align="center" style="background-color:#093; font-size:14px; "><a href="?s=Admin/Collect/Show" style="color:#FFF;">采集影片</a></td>
+        <td align="center" style="background-color:#06C; font-size:14px; "><a href="?s=Admin/Html/Show" style="color:#FFF;">生成影片</a></td>
+        <td align="center" style="background-color:#939; font-size:14px;"><a href="?s=Admin/Wei/movieSeo"  style="color:#FFF;">影片SEO</a></td>
+        <td align="center" style="background-color:#8A35AE; font-size:14px; "><a href="?s=Admin/Slide/Show" style="color:#FFF;">幻灯管理</a></td>
+        <td align="center" style="background-color:#3C3C3C; font-size:14px; "><a href="?s=Admin/Self/Mana"style="color:#FFF;">手工管理</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="98%" border="0" cellpadding="4" cellspacing="1" class="table">
+  <tr class="table_title">
+    <td colspan="2">系统环境检测：</td>
+  </tr>
+  <tr class="ji">
+    <td width="200">主机名 (IP：端口)：</td>
+    <td ><php>echo $_SERVER['SERVER_NAME'].' ('.$_SERVER['SERVER_ADDR'].':'.$_SERVER['SERVER_PORT'].')'</php></td>
+  </tr>
+  <tr class="ou">
+    <td>程序目录：</td>
+    <td>{&web_path}</td>
+  </tr>
+  <tr class="ji">
+    <td>Web服务器：</td>
+    <td><php>echo $_SERVER['SERVER_SOFTWARE']</php></td>
+  </tr>
+  <tr class="ou">
+    <td>PHP 运行方式：</td>
+    <td><php>echo PHP_SAPI</php></td>
+  </tr>
+  <tr class="ji">
+    <td>PHP版本：</td>
+    <td><php>echo PHP_VERSION</php></td>
+  </tr>
+  <tr class="ou">
+    <td>MySQL 版本：</td>
+    <td><php>if (function_exists("mysql_close")) {
+    		echo mysql_get_client_info();
+        }else{
+        	echo '不支持';
+        }</php>&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="ji">
+    <td>GD库版本：</td>
+    <td><php>
+    	if(function_exists('gd_info')){
+    	 	$gd = gd_info();
+            echo $gd['GD Version'];
+    	}else{
+        	echo "不支持";
+        }
+        </php></td>
+  </tr>
+  <tr class="ou">
+    <td>最大上传限制：</td>
+    <td><php>if (ini_get('file_uploads')) {
+    		echo ini_get('upload_max_filesize');
+        }else{
+        	echo '<span style="color:red">Disabled</span>';
+    }</php></td>
+  </tr>
+  <tr class="ji">
+    <td>最大执行时间：</td>
+    <td><php>echo ini_get('max_execution_time')</php>秒</td>
+  </tr>
+  <tr class="ou">
+    <td>采集函数检测：</td>
+    <td><php>if (ini_get('allow_url_fopen')) {
+    		echo '支持';
+        }else{
+        	echo '<span style="color:red">不支持</span>';
+    }</php></td>
+  </tr>     
+</table>
+<script>var version='{&cms_var}';</script>
+<script language="JavaScript" charset="utf-8" type="text/javascript" src="http://union.keatv.com/app/version.js"></script>
+<include file="footer" />
+</body>
+</html>

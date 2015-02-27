@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>网站信息设置</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel='stylesheet' type='text/css' href='./views/css/admin_style.css'>
+<script language="JavaScript" charset="utf-8" type="text/javascript" src="./views/js/jquery.js"></script>
+<style type="text/css">
+<!--
+.red{color:#f03;}
+-->
+</style>
+</head>
+<body>
+<table width="98" border="0" cellpadding="4" cellspacing="1" class="table">
+<form action="?s=Admin/Stype/MoveToAction"  method="post" id="gxform">
+<input name="idslist" type="hidden" value="{$idslist}" />
+<volist name="tree" id="ppvod">
+<tr class="table_title"><td colspan="50">{$ppvod.cname}</td></tr>
+
+
+<tr style="background-color:#FFF">
+<volist name="ppvod.son" id="ppvod">
+  <td class="left" style="background-color:#FFF">
+  <input type="checkbox" name="ids[]" id="ids_{$ppvod.m_cid}" value="{$ppvod.m_cid}"  />
+    <label for="ids_{$ppvod.m_cid}">{$ppvod.m_name}</label></td>
+  </volist>  
+</tr>
+
+  </volist>
+<tr class="tr">
+  <td colspan="2"><input type="hidden" name="setting_sub" value="true">
+    <input class="bginput" type="submit" name="submit" value="提交">
+    <input class="bginput" type="reset" name="Input" value="重置" >
+    </td>
+</tr>
+</form>
+</table>
+<script type="text/javascript">
+<!--
+function  Wayswitch(){
+	var way=$('#hits_way').val();
+	if(way=='0'){
+	  $('#timeset').hide();
+	}else{
+	  $('#timeset').show();
+	}
+}
+-->
+</script>
+</body>
+</html>

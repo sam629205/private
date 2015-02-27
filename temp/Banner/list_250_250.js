@@ -1,0 +1,1 @@
+document.write("<a href=\"http://www.ekucms.com/\" target=\"_blank\"><img src=\"/images/250.jpg\" width=\"250\" height=\"250\" /></a>");
